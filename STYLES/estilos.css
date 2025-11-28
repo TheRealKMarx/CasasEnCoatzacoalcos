@@ -1,182 +1,231 @@
-/* ==== ESTILOS GENERALES ==== */
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-  color: #222;
+/* ===========================
+   ESTILOS GENERALES
+=========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* ==== ENCABEZADO ==== */
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f4f6;
+    color: #1e293b;
+}
+
+/* CONTENEDOR CENTRAL */
+.container {
+    width: 90%;
+    max-width: 1300px;
+    margin: auto;
+    padding-top: 20px;
+}
+
+/* ===========================
+   HEADER
+=========================== */
 header {
-  background-color: #004aad;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 40px;
-  flex-wrap: wrap;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background: #1e3a8a;
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 header h1 {
-  margin: 0;
-  font-size: 1.8rem;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
 }
 
+/* NAV */
 nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 15px;
 }
 
 nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  transition: 0.3s;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 14px;
+    border-radius: 8px;
+    transition: 0.3s;
 }
 
 nav a:hover {
-  color: #ffd700;
+    background: rgba(255,255,255,0.2);
 }
 
-/* ==== FILTRO ==== */
-.filtro {
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.filtro select {
-    padding: 8px 12px;
-    font-size: 16px;
-    border-radius: 6px;
-    border: 1px solid #bbb;
-}
-
-
-/* ==== CONTENEDOR DE CASAS ==== */
-#casas-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 25px;
-  padding: 30px 40px;
-}
-
-/* ==== TARJETAS DE CASAS ==== */
-/* Galería */
-.galeria {
-    padding: 40px;
-    text-align: center;
-}
-
-.galeria h2 {
-    font-size: 36px;
-    margin-bottom: 25px;
-}
-
-/* Grid 4x4 */
+/* ===========================
+   GRID DE CASAS (4x4 EN PC)
+=========================== */
 .grid-casas {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 25px;
-    padding: 20px;
+    margin-top: 40px;
 }
 
-/* Tarjetas */
 .casa {
-    background: #ffffff;
+    background: white;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.12);
-    transition: transform 0.25s, box-shadow 0.25s;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    transition: transform 0.25s;
 }
 
 .casa:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.18);
+    transform: scale(1.03);
 }
 
 .casa img {
     width: 100%;
-    height: 200px;
+    height: 180px;
     object-fit: cover;
 }
 
-/* Info dentro de la tarjeta */
-.info {
+.casa-info {
     padding: 15px;
-    text-align: left;
 }
 
-.info h3 {
+.casa-info h3 {
     font-size: 20px;
     margin-bottom: 8px;
 }
 
-.precio {
-    font-size: 18px;
+.casa-info .precio {
+    font-size: 20px;
+    color: #047857;
     font-weight: bold;
-    color: #0a7cff;
 }
 
-.ubicacion {
-    font-size: 14px;
-    color: #777;
+.casa-info .ubicacion {
+    font-size: 16px;
+    color: #334155;
     margin-bottom: 12px;
 }
 
-/* Botón */
 .btn {
     display: inline-block;
-    background: #0a7cff;
+    padding: 10px 18px;
+    border-radius: 8px;
+    background: #2563eb;
     color: white;
-    padding: 8px 15px;
-    border-radius: 6px;
     text-decoration: none;
-    font-size: 14px;
-    transition: background 0.25s;
+    transition: 0.3s;
 }
 
 .btn:hover {
-    background: #005fcc;
+    background: #1d4ed8;
 }
 
-
-
-/* ==== FOOTER ==== */
-footer {
-  background-color: #004aad;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  margin-top: 30px;
-  font-size: 0.9rem;
+/* ===========================
+   FILTRO
+=========================== */
+.filtro {
+    margin: 25px 0;
+    display: flex;
+    gap: 15px;
 }
 
-/* ==== RESPONSIVE ==== */
-@media (max-width: 1200px) {
-  #casas-container {
-    grid-template-columns: repeat(3, 1fr);
-  }
+select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
 }
 
+/* ===========================
+   DETALLE DE CASA
+=========================== */
+.casa-detalle {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    margin-top: 30px;
+}
+
+.galeria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.galeria .imagen-principal img {
+    width: 90%;
+    max-height: 350px;
+    object-fit: contain;
+    border-radius: 12px;
+    background: #f1f5f9;
+    padding: 8px;
+}
+
+.galeria .miniaturas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.galeria .miniaturas img {
+    width: 90px;
+    height: 65px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.galeria .miniaturas img:hover {
+    border-color: #2563eb;
+}
+
+/* ===========================
+   RESPONSIVE — CELULARES
+=========================== */
 @media (max-width: 900px) {
-  #casas-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
+    .grid-casas {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 600px) {
-  #casas-container {
-    grid-template-columns: 1fr;
-  }
-}
-/* ==== PEQUEÑOS DETALLES ==== */
-select:focus {
-  outline: 2px solid #004aad;
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .grid-casas {
+        grid-template-columns: 1fr;
+    }
+
+    .galeria .imagen-principal img {
+        width: 100%;
+        max-height: 250px;
+    }
+
+    .galeria .miniaturas img {
+        width: 80px;
+        height: 55px;
+    }
+
+    .filtro {
+        flex-direction: column;
+        width: 100%;
+    }
 }
 
-a:focus {
-  outline: 2px solid #ffd700;
+/* ===========================
+   FOOTER
+=========================== */
+footer {
+    background: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
 }
