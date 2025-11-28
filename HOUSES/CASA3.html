@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="../STYLES/casa.css ">
+
+<div class="casa-detalle">
+
+    <a href="../HTML/casas.html" class="btn-contacto">Regreso</a>
+
+    <div class="galeria">
+        <div class="imagen-principal">
+            <img id="imgPrincipal" src="../IMAGES/CASA3/TerrenoC1.jpg" alt="imgPrincipal">
+        </div>
+
+        <div class="miniaturas">
+            <img src="../IMAGES/CASA3/TerrenoC1.jpg" onclick="cambiarImagen(this)">
+            <img src="../IMAGES/CASA3/TerrenoC2.jpg" onclick="cambiarImagen(this)">
+            <img src="../IMAGES/CASA3/TerrenoC3.jpg" onclick="cambiarImagen(this)">
+            <img src="../IMAGES/CASA3/TerrenoC4.jpg" onclick="cambiarImagen(this)">
+            <img src="../IMAGES/CASA3/TerrenoC5.jpg" onclick="cambiarImagen(this)">
+        </div>
+    </div>
+
+    <div class="detalle-info">
+        <h1>Terreno 300m2 en el Centro</h1>
+        <p class="precio">MX$1,600,000.00</p>
+
+        <p class="elemento"> Terreno de 10x30 en la Colonia Centro, Coatzacoalcos.</p>
+        <p class="elemento"> Ubicación privilegiada.</p>
+
+        <a href="../HTML/contacto.html" class="btn-contacto">Contactar</a>
+    </div>
+</div>
+
+<script>
+function cambiarImagen(img) {
+    document.getElementById("imgPrincipal").src = img.src;
+}
+</script>

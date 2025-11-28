@@ -1,0 +1,43 @@
+<link rel="stylesheet" href="../STYLES/casa.css ">
+
+<div class="casa-detalle">
+
+    <a href="../HTML/casas.html" class="btn-contacto">Regreso</a>
+
+    <div class="galeria">
+        <div class="imagen-principal">
+            <img id="imgPrincipal" src="../IMAGES/CASA5/EjidoTabasqueno - copia.jpg" alt="imgPrincipal">
+        </div>
+
+        <div class="miniaturas">
+            <img src="../IMAGES/CASA5/Tabas1.jpg" onclick="cambiarImagen(this)">
+            <img src="../IMAGES/CASA5/Tabas2.jpg" onclick="cambiarImagen(this)">
+            <img src="../IMAGES/CASA5/Tabas3.jpg" onclick="cambiarImagen(this)">
+            <img src="../IMAGES/CASA5/Tabas4.jpg" onclick="cambiarImagen(this)">
+            <img src="../IMAGES/CASA5/EjidoTabasqueno - copia.jpg" onclick="cambiarImagen(this)">
+        </div>
+    </div>
+
+    <div class="detalle-info">
+        <h1>Parcela Ejido Tabasqueño</h1>
+        <p class="precio">MX$800,000.00</p>
+
+        <p class="elemento"> Ejido El Tabasqueño.</p>
+        <p class="elemento"> Municipio de Minatitlán.</p>
+        <p class="elemento"> 8 hectáreas.</p>
+        <p class="elemento"> Dos pozos.</p>
+        <p class="elemento"> Pasto para ganado.</p>
+        <p class="elemento"> 160 plantas de limón sembradas.</p>
+        <p class="elemento"> Árboles frutales.</p>
+        <p class="elemento"> Tierra muy fértil.</p>
+        <p class="elemento"> Sin deudas en el ejido.</p>
+
+        <a href="../HTML/contacto.html" class="btn-contacto">Contactar</a>
+    </div>
+</div>
+
+<script>
+function cambiarImagen(img) {
+    document.getElementById("imgPrincipal").src = img.src;
+}
+</script>

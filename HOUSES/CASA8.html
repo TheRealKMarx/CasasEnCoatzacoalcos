@@ -1,0 +1,38 @@
+<link rel="stylesheet" href="../STYLES/casa.css ">
+
+<div class="casa-detalle">
+
+    <a href="../HTML/casas.html" class="btn-contacto">Regreso</a>
+
+    <div class="galeria">
+        <div class="imagen-principal">
+            <img id="imgPrincipal" src="../IMAGES/CASA8/VillaC1.jpeg" alt="imgPrincipal">
+        </div>
+
+        <div class="miniaturas">
+            <img src="../IMAGES/CASA8/VillaC1.jpeg" onclick="cambiarImagen(this)">
+            <img src="../IMAGES/CASA8/VillaC2.jpeg" onclick="cambiarImagen(this)">
+            <img src="../IMAGES/CASA8/VillaC3.jpeg" onclick="cambiarImagen(this)">
+
+        </div>
+    </div>
+
+    <div class="detalle-info">
+        <h1>Propiedad Esquina CD Allende, Ver</h1>
+        <p class="precio">MX$490,000.00</p>
+
+        <p class="elemento"> Terreno en esquina con construcción.</p>
+        <p class="elemento"> Col. Las Escolleras.</p>
+        <p class="elemento"> 15x20.</p>
+        <p class="elemento"> Valor cédula $608,000.</p>
+        <p class="elemento"> Precio de venta $490,00 .</p>
+
+        <a href="../HTML/contacto.html" class="btn-contacto">Contactar</a>
+    </div>
+</div>
+
+<script>
+function cambiarImagen(img) {
+    document.getElementById("imgPrincipal").src = img.src;
+}
+</script>

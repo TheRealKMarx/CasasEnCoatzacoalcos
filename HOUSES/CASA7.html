@@ -1,0 +1,49 @@
+<link rel="stylesheet" href="../STYLES/casa.css ">
+
+<div class="casa-detalle">
+
+    <a href="../HTML/casas.html" class="btn-contacto">Regreso</a>
+
+    <div class="galeria">
+        <div class="imagen-principal">
+            <img id="imgPrincipal" src="../IMAGES/CASA7/CentroN5.jpeg" alt="imgPrincipal">
+        </div>
+
+        <div class="miniaturas">
+            <img src="../IMAGES/CASA7/CentroN1.jpeg" onclick="cambiarImagen(this)">
+            <img src="../IMAGES/CASA7/CentroN2.jpeg" onclick="cambiarImagen(this)">
+            <img src="../IMAGES/CASA7/CentroN3.jpeg" onclick="cambiarImagen(this)">
+            <img src="../IMAGES/CASA7/CentroN4.jpeg" onclick="cambiarImagen(this)">
+            <img src="../IMAGES/CASA7/CentroN5.jpeg" onclick="cambiarImagen(this)">
+        </div>
+    </div>
+
+    <div class="detalle-info">
+        <h1>Casa en el Centro de Nanchital</h1>
+        <p class="precio">MX$2,500,000.00</p>
+
+        <p class="elemento"> 406m2 de terreno.</p>
+        <p class="elemento"> 431m2 de Construcción.</p>
+        <p class="elemento"> Garage.</p>
+        <p class="elemento"> Patio trasero.</p>
+        <p class="elemento"> Col. Primero de Mayo.</p>
+        <p class="elemento"> A unos metros de BANAMEX.</p>
+        <p class="elemento"> Con Escrituras, sin adeudos.</p>
+        <p class="elemento"> Dos niveles, cada uno cuenta con:
+          <li>3 recámaras</li>
+          <li>1 baño</li>
+          <li>Sala</li>
+          <li>Cocina</li>
+          <li>Comedor</li>
+        </p>
+        <p class="elemento">No se aceptan créditos</p>
+
+        <a href="../HTML/contacto.html" class="btn-contacto">Contactar</a>
+    </div>
+</div>
+
+<script>
+function cambiarImagen(img) {
+    document.getElementById("imgPrincipal").src = img.src;
+}
+</script>

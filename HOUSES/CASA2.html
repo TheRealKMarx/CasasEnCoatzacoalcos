@@ -1,0 +1,34 @@
+<link rel="stylesheet" href="../STYLES/casa.css ">
+
+<div class="casa-detalle">
+
+    <a href="../HTML/casas.html" class="btn-contacto">Regreso</a>
+
+    <div class="galeria">
+        <div class="imagen-principal">
+            <img id="imgPrincipal" src="../IMAGES/CASA2/Teoeyac1.jpeg" alt="imgPrincipal">
+        </div>
+
+        <div class="miniaturas">
+            <img src="../IMAGES/CASA2/Teoeyac1.jpeg" onclick="cambiarImagen(this)">
+            <img src="../IMAGES/CASA2/Teoeyac2.jpeg" onclick="cambiarImagen(this)">
+        </div>
+    </div>
+
+    <div class="detalle-info">
+        <h1>Casa en Nanchital Gpe TePeyac</h1>
+        <p class="precio">MX$990,000.00</p>
+
+        <p class="elemento"> Casa ubicada en SM 3.</p>
+        <p class="elemento"> Frente al parque.</p>
+
+
+        <a href="../HTML/contacto.html" class="btn-contacto">Contactar</a>
+    </div>
+</div>
+
+<script>
+function cambiarImagen(img) {
+    document.getElementById("imgPrincipal").src = img.src;
+}
+</script>

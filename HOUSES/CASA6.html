@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="../STYLES/casa.css ">
+
+<div class="casa-detalle">
+
+    <a href="../HTML/casas.html" class="btn-contacto">Regreso</a>
+
+    <div class="galeria">
+        <div class="imagen-principal">
+            <img id="imgPrincipal" src="../IMAGES/CASA6/JardinesC.jpeg" alt="imgPrincipal">
+        </div>
+
+        <div class="miniaturas">
+            <img src="../IMAGES/CASA6/JardinesC.jpeg" onclick="cambiarImagen(this)">
+
+        </div>
+    </div>
+
+    <div class="detalle-info">
+        <h1>Casa Jardines de California</h1>
+        <p class="precio">MX$1,500,000.00</p>
+
+        <p class="elemento"> Casa 3 recamaras.</p>
+        <p class="elemento"> 2 baños.</p>
+        <p class="elemento"> Sala.</p>
+        <p class="elemento"> Cocina.</p>
+        <p class="elemento"> Comedor.</p>
+        <p class="elemento"> Bodega.</p>
+        <p class="elemento"> Garage 1 vehículo.</p>
+        <p class="elemento"> Patio trasero.</p>
+
+        <a href="../HTML/contacto.html" class="btn-contacto">Contactar</a>
+    </div>
+</div>
+
+<script>
+function cambiarImagen(img) {
+    document.getElementById("imgPrincipal").src = img.src;
+}
+</script>

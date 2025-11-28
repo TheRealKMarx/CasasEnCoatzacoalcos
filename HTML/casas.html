@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casas - Casas en Coatzacoalcos y zona sur de Veracruz</title>
+
+
+  <!-- Enlace al archivo de estilos externo -->
+  <link rel="stylesheet" href="../STYLES/estilos.css">
+</head>
+<body>
+
+
+  <header>
+
+  <h1>Casas - Casas en Coatzacoalcos y zona sur de Veracruz</h1>
+
+<nav>
+    <a href="index.html">Página principal</a>
+    <a href="casas.html">Casas</a>
+    <a href="contacto.html">Contactanos</a>
+    <a href="nosotros.html">Sobre nosotros</a>
+  </nav>
+
+  </header>
+
+
+ <section class="galeria">
+    <h2>Casas Disponibles</h2>
+
+    <!-- FILTRO -->
+    <div class="filtro">
+        <label for="ubicacion">Filtrar por ubicación:</label>
+        <select id="ubicacion">
+            <option value="todas">Todas</option>
+            <option value="coatzacoalcos">Coatzacoalcos</option>
+            <option value="nanchital">Nanchital</option>
+            <option value="otra">Otra</option>
+        </select>
+    </div>
+
+    <!-- GRID -->
+    <div class="grid-casas">
+
+        <div class="casa" data-ubicacion="coatzacoalcos">
+            <img src="../IMAGES/HOUSESPAGE/CasaRevolucionCover.jpg" alt="Casa 1">
+            <div class="info">
+                <h3>Casa privada en Revolucion Centro</h3>
+                <p class="precio">MX$1,600,000.00</p>
+                <p class="ubicacion">Coatzacoalcos, Veracruz</p>
+                <a href="../HOUSES/CASA1.html" class="btn">Ver más</a>
+            </div>
+        </div>
+
+        <div class="casa" data-ubicacion="nanchital">
+            <img src="../IMAGES/HOUSESPAGE/CasaNanchitalTeoeyac.jpg" alt="Casa 2">
+            <div class="info">
+                <h3>Casa en Nanchital Gpe Tepeyac</h3>
+                <p class="precio">MX$990,000.00</p>
+                <p class="ubicacion">Nanchital, Veracruz</p>
+                <a href="../HOUSES/CASA2.html" class="btn">Ver más</a>
+            </div>
+        </div>
+
+        <div class="casa" data-ubicacion="coatzacoalcos">
+            <img src="../IMAGES/HOUSESPAGE/TerrenoCentro.jpg" alt="Casa 3">
+            <div class="info">
+                <h3>Terreno 300m2 en el Centro</h3>
+                <p class="precio">MX$1,600,000.00</p>
+                <p class="ubicacion">Coatzacoalcos, Veracruz</p>
+                <a href="../HOUSES/CASA3.html" class="btn">Ver más</a>
+            </div>
+        </div>
+
+        <div class="casa" data-ubicacion="otra">
+            <img src="../IMAGES/HOUSESPAGE/LasChoapas.jpg" alt="Casa 4">
+            <div class="info">
+                <h3>Propiedad de 6,085m2 Tancochapa, Las Choapas</h3>
+                <p class="precio">$2,300,000 MXN</p>
+                <p class="ubicacion">Las Choapas, Veracruz</p>
+                <a href="../HOUSES/CASA4.html" class="btn">Ver más</a>
+            </div>
+        </div>
+
+        <div class="casa" data-ubicacion="otra">
+            <img src="../IMAGES/HOUSESPAGE/EjidoTabasqueno.jpg" alt="Casa 1">
+            <div class="info">
+                <h3>Parcela Ejido Tabasqueño</h3>
+                <p class="precio">MX$800,000.00</p>
+                <p class="ubicacion">Ejido El Tabasqueño, Municipio de Minatitlán</p>
+                <a href="../HOUSES/CASA5.html" class="btn">Ver más</a>
+            </div>
+        </div>
+
+        <div class="casa" data-ubicacion="coatzacoalcos">
+            <img src="../IMAGES/HOUSESPAGE/JardinesCalifornias.jpg" alt="Casa 2">
+            <div class="info">
+                <h3>Casa Jardines de California</h3>
+                <p class="precio">MX$1,500,000.00</p>
+                <p class="ubicacion">Coatzacoalcos, Veracruz</p>
+                <a href="../HOUSES/CASA6.html" class="btn">Ver más</a>
+            </div>
+        </div>
+
+        <div class="casa" data-ubicacion="nanchital">
+            <img src="../IMAGES/HOUSESPAGE/CentroNanchital.jpg" alt="Casa 3">
+            <div class="info">
+                <h3>Casa en el Centro de Nanchital</h3>
+                <p class="precio">MX$2,500,000.00</p>
+                <p class="ubicacion">Nanchital, Veracruz</p>
+                <a href="../HOUSES/CASA7.html" class="btn">Ver más</a>
+            </div>
+        </div>
+
+        <div class="casa" data-ubicacion="otra">
+            <img src="../IMAGES/HOUSESPAGE/EsquinaAllende.jpg" alt="Casa 4">
+            <div class="info">
+                <h3>Propiedad Esquina CD Allende, Ver</h3>
+                <p class="precio">MX$490,000.00</p>
+                <p class="ubicacion">Allende, Veracruz</p>
+                <a href="../HOUSES/CASA8.html" class="btn">Ver más</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+  <!-- Script para el filtro de propiedades -->
+
+  <script>
+document.getElementById("ubicacion").addEventListener("change", function() {
+    const seleccion = this.value;
+    const casas = document.querySelectorAll(".casa");
+
+    casas.forEach(casa => {
+        const ubicacionCasa = casa.getAttribute("data-ubicacion");
+
+        if (seleccion === "todas" || seleccion === ubicacionCasa) {
+            casa.style.display = "block";
+        } else {
+            casa.style.display = "none";
+        }
+    });
+});
+</script>
+
+
+</body>
+</html>

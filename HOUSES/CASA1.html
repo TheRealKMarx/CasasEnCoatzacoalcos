@@ -1,0 +1,41 @@
+<link rel="stylesheet" href="../STYLES/casa.css ">
+
+<div class="casa-detalle">
+
+    <a href="../HTML/casas.html" class="btn-contacto">Regreso</a>
+
+    <div class="galeria">
+        <div class="imagen-principal">
+            <img id="imgPrincipal" src="../IMAGES/CASA1/CasaRev2.jpeg" alt="imgPrincipal">
+        </div>
+
+        <div class="miniaturas">
+            <img src="../IMAGES/CASA1/CasaRev1.jpeg" onclick="cambiarImagen(this)">
+            <img src="../IMAGES/CASA1/CasaRev2.jpeg" onclick="cambiarImagen(this)">
+            <img src="../IMAGES/CASA1/CasaRev3.jpeg" onclick="cambiarImagen(this)">
+            <img src="../IMAGES/CASA1/CasaRev4.jpeg" onclick="cambiarImagen(this)">
+            <img src="../IMAGES/CASA1/CasaRev5.jpeg" onclick="cambiarImagen(this)">
+        </div>
+    </div>
+
+    <div class="detalle-info">
+        <h1>Casa Privada Revolución Centro</h1>
+        <p class="precio">MX$1,600,000.00</p>
+
+        <p class="elemento"> Casa en Privada Colonia Centro</p>
+        <p class="elemento"> 3 Recámaras</p>
+        <p class="elemento"> 1 Baño completo y 1 baño sin regadera</p>
+        <p class="elemento"> Patio de servicio.</p>
+        <p class="elemento"> Garage 1 Auto.</p>
+        <p class="elemento"> A unos metros del hospital Semedis.</p>
+        <p class="elemento"> Riguroso Contado.</p>
+
+        <a href="../HTML/contacto.html" class="btn-contacto">Contactar</a>
+    </div>
+</div>
+
+<script>
+function cambiarImagen(img) {
+    document.getElementById("imgPrincipal").src = img.src;
+}
+</script>
