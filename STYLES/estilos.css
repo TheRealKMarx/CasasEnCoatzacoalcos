@@ -21,37 +21,34 @@ body {
     padding-top: 20px;
 }
 
-/* ===========================
-   HEADER
-=========================== */
+/* ============================
+      HEADER GENERAL
+============================ */
 header {
-    background: #1e3a8a;
+    width: 100%;
+    padding: 20px 5%;
+    background: #0A3D62;
     color: white;
-    padding: 20px 0;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-header h1 {
-    text-align: center;
-    font-size: 32px;
+.logo {
+    font-size: 24px;
     font-weight: bold;
 }
 
-/* NAV */
+/* Menú normal (PC) */
 nav {
     display: flex;
-    justify-content: center;
-    gap: 25px;
-    margin-top: 15px;
+    gap: 20px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
-    padding: 8px 14px;
-    border-radius: 8px;
-    transition: 0.3s;
+    font-size: 16px;
 }
 
 nav a:hover {
@@ -184,6 +181,53 @@ select {
     border-color: #2563eb;
 }
 
+/* ============================
+      MENÚ HAMBURGUESA (MÓVIL)
+============================ */
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Vista móvil */
+@media (max-width: 700px) {
+
+    /* Oculta el menú normal */
+    nav {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #0A3D62;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        padding: 15px 0;
+        display: none;
+    }
+
+    /* Cuando el menú está abierto */
+    nav.nav-open {
+        display: flex;
+    }
+
+    nav a {
+        padding: 12px 0;
+        font-size: 18px;
+        border-top: 1px solid rgba(255,255,255,0.1);
+    }
+
+    nav a:last-child {
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    /* Botón hamburguesa visible */
+    .menu-toggle {
+        display: block;
+    }
+}
+
 /* ===========================
    RESPONSIVE — CELULARES
 =========================== */
@@ -296,5 +340,6 @@ footer {
         padding: 15px;
     }
 }
+
 
 
