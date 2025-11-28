@@ -229,3 +229,72 @@ footer {
     padding: 20px;
     margin-top: 40px;
 }
+
+/* ===========================
+   OPTIMIZACIÓN MÓVIL GLOBAL
+=========================== */
+@media (max-width: 600px) {
+
+    /* HEADER más pequeño */
+    header {
+        padding: 12px 0;
+    }
+
+    header h1 {
+        font-size: 20px;
+        line-height: 1.2;
+        margin-bottom: 10px;
+    }
+
+    /* MENU más compacto */
+    nav {
+        gap: 8px;
+        margin-top: 5px;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+
+    /* CONTENEDOR GENERAL: agrega márgenes y mejor lectura */
+    .container,
+    main,
+    section {
+        width: 92%;
+        margin: auto;
+    }
+
+    /* TEXTOS de la página principal */
+    h2, h3 {
+        font-size: 20px;
+        margin-top: 15px;
+    }
+
+    p {
+        font-size: 15px;
+        line-height: 1.4;
+    }
+
+    /* IMÁGENES DE LA PÁGINA PRINCIPAL */
+    .imagen-principal,
+    .contenido img {
+        width: 100%;
+        max-height: 230px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    /* SECCIONES */
+    section {
+        margin-bottom: 25px;
+    }
+
+    /* FOOTER compacto */
+    footer {
+        font-size: 14px;
+        padding: 15px;
+    }
+}
+
+
