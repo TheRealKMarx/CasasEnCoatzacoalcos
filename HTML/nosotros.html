@@ -11,17 +11,22 @@
 
     <body>
     <header>
-      <h1>Sobre nosotros - Casas en Coatzacoalcos y zona sur de Veracruz</h1>
+    <div class="logo">Casas en Coatzacoalcos</div>
 
-      <!--Barra de navegacion-->
-    <nav>
-      <a href="../index.html">Página principal</a>
-      <a href="casas.html">Casas</a>
-      <a href="contacto.html">Contactanos</a>
-      <a href="nosotros.html">Sobre nosotros</a>
+    <!-- Botón hamburguesa -->
+    <div class="menu-toggle" id="menu-toggle">
+        ☰
+    </div>
 
+    <!-- Menú -->
+    <nav id="nav">
+        <a href="../index.html">Inicio</a>
+        <a href="casas.html">Casas</a>
+        <a href="contacto.html">Sobre Nosotros</a>
+        <a href="nosotros.html">Contacto</a>
     </nav>
-    </header>
+</header>
+
 
     
 
@@ -35,7 +40,20 @@
 
     <h2><strong>Nuestra visión</strong></h2>
     <p>Nuestra visión es ser la agencia inmobiliaria líder en Coatzacoalcos, reconocida por nuestra integridad,
-       profesionalismo y dedicación al cliente. Aspiramos a transformar el mercado inmobiliario local
+       profesionalismo y dedicación al cliente. Aspiramos a transformar el mercado inmobiliario local</p>
        mediante la innovación tecnológica y un enfoque centrado en el cliente,
-
        estableciendo nuevos estándares de excelencia en el sector y contribuyendo al desarrollo sostenible de la comunidad.</p>
+
+      <script>
+    const toggle = document.getElementById("menu-toggle");
+    const nav = document.getElementById("nav");
+
+    toggle.addEventListener("click", () => {
+        nav.classList.toggle("nav-open");
+        toggle.classList.toggle("open");
+    });
+</script>
+
+
+    </body>
+
