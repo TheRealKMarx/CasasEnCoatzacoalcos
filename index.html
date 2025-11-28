@@ -5,16 +5,22 @@
 
     <body>
         <header>
-            <h1>Casas en Coatzacoalcos y zona sur de Veracruz</h1>
+    <div class="logo">Casas en Coatzacoalcos</div>
 
-             <!--Barra de navegacion-->
-        <nav>
-            <a href="index.html">Pagina principal</a>
-            <a href="HTML/casas.html">Casas</a>
-            <a href="HTML/contacto.html">Contactanos</a>
-            <a href="HTML/nosotros.html">Sobre nosotros</a>
+    <!-- Botón hamburguesa -->
+    <div class="menu-toggle" id="menu-toggle">
+        ☰
+    </div>
 
-        </nav>
+    <!-- Menú -->
+    <nav id="nav">
+        <a href="index.html">Inicio</a>
+        <a href="HTML/casas.html">Casas</a>
+        <a href="HTML/contacto.html">Sobre Nosotros</a>
+        <a href="HTML/nosotros.html">Contacto</a>
+    </nav>
+</header>
+
         </header>
 
          <!-- Enlace al archivo de estilos externo -->
@@ -76,9 +82,22 @@
                                         Explora nuestro catálogo en línea, habla nuestra asesora
                                         En Casas en Coatzacoalcos estamos listos para ayudarte a encontrar la propiedad perfecta para ti.</p>
 
+        <script>
+    const toggle = document.getElementById("menu-toggle");
+    const nav = document.getElementById("nav");
+
+    toggle.addEventListener("click", () => {
+        nav.classList.toggle("nav-open");
+        toggle.classList.toggle("open");
+    });
+</script>
+
+    </body>
+
                                         <footer>
 
             <p>&copy; 2025 Casas en Coatzacoalcos. Todos los derechos reservados.</p>
+
 
 
 
