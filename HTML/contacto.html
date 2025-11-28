@@ -7,19 +7,23 @@
 </head>
 
   <body>
-    <header>
-      <h1>Contáctanos - Casas en Coatzacoalcos y zona sur de Veracruz</h1>
+   <header>
+    <div class="logo">Casas en Coatzacoalcos</div>
 
-      <!--Barra de navegacion-->
-    <nav>
-      <a href="../index.html">Página principal</a>
-      <a href="casas.html">Casas</a>
-      <a href="contacto.html">Contactanos</a>
-      <a href="nosotros.html">Sobre nosotros</a>
+    <!-- Botón hamburguesa -->
+    <div class="menu-toggle" id="menu-toggle">
+        ☰
+    </div>
 
+    <!-- Menú -->
+    <nav id="nav">
+        <a href="../index.html">Inicio</a>
+        <a href="casas.html">Casas</a>
+        <a href="contacto.html">Sobre Nosotros</a>
+        <a href="nosotros.html">Contacto</a>
     </nav>
+</header>
 
-    </header>
 
      <!-- Enlace al archivo de estilos externo -->
   <link rel="stylesheet" href="../STYLES/estilos.css">
@@ -39,3 +43,17 @@
 
 
       <img id="imgPrincipal" src="../IMAGES/InfoAsesora.jpg" alt="imgPrincipal">
+    </ul>
+
+    <script>
+    const toggle = document.getElementById("menu-toggle");
+    const nav = document.getElementById("nav");
+
+    toggle.addEventListener("click", () => {
+        nav.classList.toggle("nav-open");
+        toggle.classList.toggle("open");
+    });
+</script>
+
+
+  </body>
