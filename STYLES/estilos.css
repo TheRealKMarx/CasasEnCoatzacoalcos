@@ -21,6 +21,20 @@ body {
     padding-top: 20px;
 }
 
+/* IMG PAG PRINCIPAL */
+.img-principal {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    max-height: 400px;
+}
+
+/* TEXTO GENERAL */
+.texto-general {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 35px;
+}
+
 /* ============================
       HEADER GENERAL
 ============================ */
@@ -35,7 +49,7 @@ header {
 }
 
 .logo {
-    font-size: 24px;
+    font-size: 34px;
     font-weight: bold;
 }
 
@@ -48,7 +62,7 @@ nav {
 nav a {
     color: white;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 nav a:hover {
@@ -63,6 +77,9 @@ nav a:hover {
     grid-template-columns: repeat(4, 1fr);
     gap: 25px;
     margin-top: 40px;
+    padding-left: 20px;
+    padding-right:20px;
+    padding-bottom:50px;
 }
 
 .casa {
@@ -71,6 +88,10 @@ nav a:hover {
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0,0,0,0.15);
     transition: transform 0.25s;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .casa:hover {
@@ -128,9 +149,8 @@ nav a:hover {
 }
 
 select {
-    padding: 10px;
     font-size: 16px;
-    border-radius: 8px;
+    border-radius: 2px;
     border: 1px solid #cbd5e1;
 }
 
@@ -324,7 +344,7 @@ footer {
     .imagen-principal,
     .contenido img {
         width: 100%;
-        max-height: 230px;
+        max-height: 200px;
         object-fit: cover;
         border-radius: 8px;
     }
@@ -341,5 +361,15 @@ footer {
     }
 }
 
+/* ===========================
+   LOGO Y TARJETA
+=========================== */
+    .logo-image {
+        max-height: 75px;
+    }
 
+    .biz-card {
+        max-height: 350px;
+        padding-top: 20px;
+    }
 
