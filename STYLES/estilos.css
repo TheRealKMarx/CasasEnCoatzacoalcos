@@ -33,11 +33,16 @@ body {
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 35px;
+    padding-bottom: 35px;
 }
 
 /* ============================
       HEADER GENERAL
 ============================ */
+.pc-only{
+    display: block;
+}
+
 header {
     width: 100%;
     padding: 20px 5%;
@@ -160,7 +165,7 @@ select {
 .casa-detalle {
     background: white;
     padding: 25px;
-    border-radius: 15px;
+    border-radius: 2px;
     box-shadow: 0 6px 20px rgba(0,0,0,0.15);
     margin-top: 30px;
 }
@@ -175,7 +180,7 @@ select {
     width: 90%;
     max-height: 350px;
     object-fit: contain;
-    border-radius: 12px;
+    border-radius: 8px;
     background: #f1f5f9;
     padding: 8px;
 }
@@ -295,6 +300,19 @@ footer {
 }
 
 /* ===========================
+   LOGO Y TARJETA
+=========================== */
+    .logo-image {
+        max-height: 75px;
+    }
+
+    .biz-card {
+        max-height: 350px;
+        padding-top: 20px;
+    }
+
+
+/* ===========================
    OPTIMIZACIÓN MÓVIL GLOBAL
 =========================== */
 @media (max-width: 600px) {
@@ -302,6 +320,15 @@ footer {
     /* HEADER más pequeño */
     header {
         padding: 12px 0;
+    }
+
+    .pc-only {
+        display: none;
+    }
+
+    .logo {
+        font-size: 18px;
+        font-weight: bold;
     }
 
     header h1 {
@@ -359,17 +386,31 @@ footer {
         font-size: 14px;
         padding: 15px;
     }
-}
 
-/* ===========================
-   LOGO Y TARJETA
-=========================== */
+    /* TEXTO GENERAL */
+    .texto-general {
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-top: 20px;
+        padding-bottom: 25px;
+    }
+
     .logo-image {
-        max-height: 75px;
+        max-height: 40px;
+        padding-right: 10px;
     }
 
     .biz-card {
-        max-height: 350px;
+        max-height: 120px;
         padding-top: 20px;
     }
+
+    /* IMG PAG PRINCIPAL */
+        .img-principal {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        max-height: 120px;
+    }
+}
+
 
