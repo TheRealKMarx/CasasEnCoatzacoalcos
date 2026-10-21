@@ -214,6 +214,7 @@ select {
     font-size: 30px;
     cursor: pointer;
     user-select: none;
+    padding-right: 20px;
 }
 
 /* Vista móvil */
@@ -228,7 +229,7 @@ select {
         width: 100%;
         flex-direction: column;
         text-align: center;
-        padding: 15px 0;
+        /*padding: 15px 0;*/
         display: none;
     }
 
@@ -396,12 +397,12 @@ footer {
     }
 
     .logo-image {
-        max-height: 40px;
+        max-height: 60px;
         padding-right: 10px;
     }
 
     .biz-card {
-        max-height: 120px;
+        max-height: 250px;
         padding-top: 20px;
     }
 
@@ -409,7 +410,7 @@ footer {
         .img-principal {
         padding-top: 15px;
         padding-bottom: 15px;
-        max-height: 120px;
+        max-height: 225px;
     }
 }
 
